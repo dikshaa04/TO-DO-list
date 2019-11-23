@@ -1,0 +1,13 @@
+body{
+text-align: center;
+background-color: Grey
+}
+
+ul{
+list-style-type: decimal;
+padding: 50
+}
+ul li{
+background: LightGray;
+
+}

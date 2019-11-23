@@ -1,0 +1,31 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="to-do-list.css">
+<title>TO DO LIST</title></head>
+<body>
+<input type="text" id="text-box" placeholder="Enter Your Text"/>
+<input type="button" id="btn" value="Add"/>
+<ul id='list'></ul>
+
+<script>
+var t=document.getElementById('text-box')
+console.log(t)
+var b=document.getElementById('btn')
+console.log(b)
+b.addEventListener('click',onClick)
+function onClick()
+{
+var l=document.createElement('li')
+console.log(l)
+l.textContent=t.value
+var d=document.createElement('button')
+d.innerHTML="Delete"
+var ll=document.getElementById('list')
+ll.appendChild(l)
+ll.appendChild(d)
+}
+
+
+</script>
+</body>
+</html>
